@@ -46,3 +46,35 @@ npm run deploy
 
 This will deploy your GitHub page to `https://<username>.github.io/<repository name>` URL. Don’t forget to change the username and repository name to your personal Github username and repository.
 It may take a couple of minutes. You can check the progress in GitHub Actions tab.
+
+## DIY GitHub pages
+
+```bash
+pnpm i -D gh-pages
+```
+
+Add the following to the package.json scripts:
+
+```json
+ "deploy": "npx gh-pages -d dist"
+```
+
+Update vite.config.ts
+
+```
+import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: "/svelte-ts-starter/",
+  plugins: [svelte()],
+})
+```
+
+Build and deploy:
+
+```bash
+npm run build
+npm run deploy
+```
