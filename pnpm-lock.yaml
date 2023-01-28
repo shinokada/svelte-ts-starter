@@ -21,11 +21,6 @@ specifiers:
   url-slug: ^3.0.4
   vite: ^4.1.0-beta.1
 
-dependencies:
-  svelte-spa-router: 3.3.0
-  timeago.js: 4.0.2
-  url-slug: 3.0.4
-
 devDependencies:
   '@popperjs/core': 2.11.6
   '@sveltejs/vite-plugin-svelte': 2.0.2_ewkuvi4xvdwcddpq4wg56z5goe
@@ -39,9 +34,12 @@ devDependencies:
   svelte: 3.55.1
   svelte-check: 2.10.3_gqx7lw3sljhsd4bstor5m2aa2u
   svelte-preprocess: 4.10.7_awginupsaj455aehf5x365sh44
+  svelte-spa-router: 3.3.0
   tailwindcss: 3.2.4_postcss@8.4.21
+  timeago.js: 4.0.2
   tslib: 2.5.0
   typescript: 4.9.4
+  url-slug: 3.0.4
   vite: 4.1.0-beta.1
 
 packages:
@@ -931,7 +929,7 @@ packages:
   /regexparam/2.0.1:
     resolution: {integrity: sha512-zRgSaYemnNYxUv+/5SeoHI0eJIgTL/A2pUtXUPLHQxUldagouJ9p+K6IbIZ/JiQuCEv2E2B1O11SjVQy3aMCkw==}
     engines: {node: '>=8'}
-    dev: false
+    dev: true
 
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
@@ -1115,7 +1113,7 @@ packages:
     resolution: {integrity: sha512-cwRNe7cxD43sCvSfEeaKiNZg3FCizGxeMcf7CPiWRP3jKXjEma3vxyyuDtPOam6nWbVxl9TNM3hlE/i87ZlqcQ==}
     dependencies:
       regexparam: 2.0.1
-    dev: false
+    dev: true
 
   /svelte/3.55.1:
     resolution: {integrity: sha512-S+87/P0Ve67HxKkEV23iCdAh/SX1xiSfjF1HOglno/YTbSTW7RniICMCofWGdJJbdjw3S+0PfFb1JtGfTXE0oQ==}
@@ -1158,7 +1156,7 @@ packages:
 
   /timeago.js/4.0.2:
     resolution: {integrity: sha512-a7wPxPdVlQL7lqvitHGGRsofhdwtkoSXPGATFuSOA2i1ZNQEPLrGnj68vOp2sOJTCFAQVXPeNMX/GctBaO9L2w==}
-    dev: false
+    dev: true
 
   /to-regex-range/5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
@@ -1190,7 +1188,7 @@ packages:
 
   /url-slug/3.0.4:
     resolution: {integrity: sha512-C880WJTo68O4J59i+w9Yp4P0iDUrMeCAVwNvHAYjSc59XsO4pkPfe8bsEHEyZrEfWWy8BDyxMQi6BPVHp/GEbg==}
-    dev: false
+    dev: true
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
