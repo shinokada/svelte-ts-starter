@@ -2,7 +2,7 @@
   import Router, { link } from "svelte-spa-router";
   import { routes } from "./routes.js";
   import { onMount } from "svelte";
-  import { Alert } from "flowbite-svelte";
+  import { DarkMode } from "flowbite-svelte";
   let data;
   async function fetchData() {
     const response = await fetch(import.meta.env.VITE_API_ENDPOINT);
@@ -11,7 +11,8 @@
   onMount(fetchData);
 </script>
 
-<main class="p-4">
+<DarkMode />
+<div class="p-8 overflow-hidden bg-gray-50 dark:bg-gray-900">
   <Router {routes} />
 
   {#if data}
@@ -22,4 +23,4 @@
       {/each}
     </ul>
   {/if}
-</main>
+  </div>
